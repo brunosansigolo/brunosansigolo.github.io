@@ -1,0 +1,28 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "project-description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testStandard": "standard && node my-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunosansigolo/projects.git"
+  },
+  "author": "Bruno Sansigolo",
+  "homepage": "https://github.com/brunosansigolo/projects",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "sass-mq": "^3.3.2",
+    "sassdoc": "^2.4.0",
+    "standard": "^10.0.3",
+    "susy": "^3.0.1"
+  }
+}

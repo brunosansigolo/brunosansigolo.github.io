@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'partials/abstracts/variables',
+  'partials/abstracts/functions',
+  'partials/abstracts/mixins';
+
+// 2. Vendors
+@import
+  'partials/vendor/normalize',
+  'partials/vendor/mq',
+  'partials/vendor/susy/sass/susy-prefix';
+
+// 3. Base stuff
+@import
+  'partials/base/base',
+  'partials/base/fonts',
+  'partials/base/typography',
+  'partials/base/helpers';
+
+// 4. Layout-related sections
+@import
+  'partials/layout/header',
+  'partials/layout/footer';
+
+// 5. Components
+@import
+  'partials/components/button',
+  'partials/components/picture';
+
+// 6. Page-specific styles
+@import
+  'partials/pages/home';
+
+// 7. Themes
+@import
+  'partials/themes/default';

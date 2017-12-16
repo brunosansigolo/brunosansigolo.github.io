@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+* Set up a decent box model on the root element
+*/
+html {
+  box-sizing: border-box;
+}
+
+/**
+* Make all elements from the DOM inherit from the parent box-sizing
+* Since `*` has a specificity of 0, it does not override the `html` value
+* making all elements inheriting from the root box-sizing value
+* See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+* Basic styles for links
+*/
+a {
+  color: $brand-color;
+  text-decoration: none;
+  
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+/**
+* My breakpoints
+*/
+$mq-breakpoints: (
+mobile  : 320px,
+iphone6 : 375px,
+iphone6p: 414px,
+small   : 480px,
+medium  : 640px,
+tablet  : 740px,
+desktop : 980px,
+wide    : 1300px
+);
+
+$mq-show-breakpoints: (mobile, iphone6, iphone6p, small, medium, tablet, desktop, wide);
+@include mq-show-breakpoints;
